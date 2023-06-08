@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background: black;
+    color: white;
+}
+
+.mobilecon{
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+.topnav{
+    position: relative;
+    background: #0000ff;
+    border-radius: 12px;
+    padding: 10px;
+     overflow: hidden;
+}
+
+#mylinks{
+      display: none;
+}
+
+#mylinks a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    display: block;
+}
+
+.topnav a.icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    padding: 10px;
+    /* display: block; */
+}
+
+#mylinks a:hover{
+    color: black;
+}
+
+.topnav a:hover{
+    background: white;
+    color: black;
+}
+
+.active{
+    color: white;
+    text-decoration: none;
+}
+
+.cont{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* ..................................... */
+
+.mobilecon1{
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+.topnav1{
+    position: relative;
+    background: #0000ff;
+    border-radius: 12px;
+    padding: 10px;
+     overflow: hidden;  
+}
+
+#mylinks1{
+      display: none;
+}
+
+.topnav1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    display: block;
+    float: left;
+}
+
+.topnav1 a.icon1{
+    float: right;
+    padding: 10px;
+    /* display: block; */
+}
+
+#mylinks1 a:hover{
+    color: black;
+}
+
+.topnav1 a:hover{
+    background: white;
+    color: black;
+}
+
+.active1{
+    color: white;
+    text-decoration: none;
+}
+
+.cont1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* ................................................ */
+
+.h, #mybtn{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.model{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* the overflow is to enable scroll if needed */
+    background-color: aqua;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.modelcon{
+    background: #ff00ff50;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.close{
+    color: #00ff0050;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ...................................................... */
+
+.tabs{
+    border: 1px solid #000000;
+    background: #ffffff;
+    overflow: hidden;
+    /* didnt see effect of overflow hidden */
+    margin-top: 50px;
+}
+
+.tablinks{
+    background: inherit;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    float: left;
+    transition: .3s;
+    /* float left tends to give it space between them */
+}
+
+ .tablinks:hover{
+    background: red;
+} 
+
+/* .tablinks.active{
+    background: green;
+} */
+
+ .active, .tablinks:hover{
+    background: #0000ff;
+    color: white;
+}
+
+.tabcontent{
+    position: relative;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid purple;
+    border-top: none;
+    animation: anime .3s ease-in-out;
+}
+
+@keyframes anime{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.tabcontent span{
+    top: 0;
+    right: 10px;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tabcontent span:hover{
+    color: red;
+}

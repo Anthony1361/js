@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="mobilecon">
+
+        <div class="topnav">
+            <a href="#Home" class="active">Home</a>
+
+            <div id="mylinks">
+                <a href="#News">News</a>
+                <a href="#Contact">Contact</a>
+                <a href="#About">About</a>
+            </div>
+            <a href="javascript:void(0)" class="icon" onclick="myfunction()">
+                  <i class="fa fa-bars"></i>    </a>
+        </div>
+
+        <div class="cont">
+            <h1>Contents</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt accusa
+                ntium similique labore itaque quaerat quasi earum odio assumenda reru</p>
+        </div>
+
+    </div>
+
+
+    <div class="mobilecon1">
+
+        <div class="topnav1">
+            <a href="#Home1" class="active1">Home</a>
+
+            <div id="mylinks1">
+                <a href="#News1">News</a>
+                <a href="#Contact1">Contact</a>
+                <a href="#About1">About</a>
+            </div>
+            <a href="javascript:void(0)" class="icon1" onclick="myfunct()">
+                  <i class="fa fa-bars"></i>    </a>
+        </div>
+
+        <div class="cont1">
+            <h1>Contents</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt accusa
+                ntium similique labore itaque quaerat quasi earum odio assumenda reru</p>
+        </div>
+
+    </div>
+
+    <section>
+        <h2 class="h">Modal Example</h2>
+        <button id="mybtn">click me</button>
+
+        <div id="mymodel" class="model">
+
+            <div class="modelcon">
+                <span class="close" >&times;</span>
+                <p>Hi am the modal</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="tabs">
+            <button  class="tablinks active" onclick="opencity(Event, 'london')" id="default">London</button>
+            <button  class="tablinks " onclick="opencity(Event, 'paris')">Paris</button>
+            <button  class="tablinks " onclick="opencity(Event, 'tokyo')">Tokyo</button>
+            <!-- Note.. THE Event is very very important -->
+        </div>
+
+        <div class="tabcontent" id="london">
+            <h3>London</h3>
+            <p>London is the capital of UK</p>
+            <span onclick="this.parentElement.style.display = 'none'">x</span>
+            <!-- the parentElement keyword is a must -->
+        </div>
+
+        <div class="tabcontent" id="paris">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France</p>
+            <span onclick="this.parentElement.style.display = 'none'">x</span>
+        </div>
+
+        <div class="tabcontent" id="tokyo">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan</p>
+            <span onclick="this.parentElement.style.display = 'none'">x</span>
+        </div>
+    </section>
+
+    <script src="js/index5.js"></script>
+</body>
+</html>

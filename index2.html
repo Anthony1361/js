@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>change background of an html element on a button click</h1>
+        <p id="demo"> change my background color</p>
+        <button onclick="myclick()">click me</button>
+    </section>
+
+    <section>
+        <h1>declare a warning message</h1>
+        <p id="demo1" onclick="warning()">my last warning</p>
+    </section>
+
+    <section>
+        <h1>add a text to an existing element on button click</h1>
+        <button onclick="myfriend()">show my friend</button>
+        <p id="demo2">my friend is:</p>
+    </section>
+
+    <section>
+        <h1>enjoy the audio</h1>
+        <p id="demo3" onmouseover="myplay(This)">Beware of sounds</p>
+        <audio id="play" src="css/piano.mp3" controls  ></audio>
+    </section>
+
+    <section>
+        <h1>second p font size increases onscroll</h1>
+        <div onscroll="font()" style="width: 200px; height: 100px; border: 1px solid black; overflow: scroll;">
+            <p>i maintain my size</p>
+            <p id="size">my font size increases</p>
+            <p>i maintain my size</p>
+        </div>
+    </section>
+
+    <section>
+        <h1>random numbers</h1>
+        <button onclick="guess()">Guess the next Number</button>
+            <p id="demo4"></p>
+    </section>
+
+    <section>
+        <h1> Disappear div</h1>
+        <div id="disappear">
+            <p>i want to disappear</p>
+        </div>
+        <button onclick="remove()">remove the above div</button>
+    </section>
+
+    <section>
+        <h1>Appear  div</h1>
+        <button onclick="bring()">pls select one</button>
+        <div id="appear">
+            <!-- <ul>
+                <li>Mango</li>
+                <li>Sugar</li>
+                <li>Beans</li>
+            </ul> -->
+        </div>
+        <!-- <button onclick="bring()">pls select one</button> -->
+    </section>
+
+    <!-- <section>
+        <h1>width</h1>
+        <button onclick="jump()">login</button>
+    </section>  -->
+
+    <section>
+        <form action="" id="Fname" onsubmit="return validform()">
+            <input type="text" id="fname" placeholder="Name">
+            <input type="text" id="ffname" placeholder="Email">
+            <input type="password" id="FFname" placeholder="Password">
+            <button   >submit</button>
+        </form>
+    </section>
+
+    <script src="js/index2.js"></script>
+</body>
+</html>
